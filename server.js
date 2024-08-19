@@ -1,33 +1,30 @@
-const expres=require('express')
-const app=expres();
+const express=require('express')
+const app=express();
 const db=require('./config/database')
 const userModel=require('./model/user.moodel')
 require('dotenv').config()
 
-try{
-    app.get('/',async (req,res)=>{
-        try{
+// app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-            await userModel.create({
-                name:"Ferrari",
-                email:"monboruah@gmail.com",
-                password:"123"
-            })
-            res.send("working")
-        }catch(err){
-            console.log(err.message)
-        }
-    })
+//requiring routes
+// const register=require('./routes/register')
 
-}
-catch(err){
-    console.log(err.message)
-}
+app.use('/login',require('./routes/register'))
+
+const path=require('path')
+
+app.use(express.static(path.join(__dirname,'public')))
+
+app.get('/form',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+})
+
 
 
 // process.env.PORT=8080;
 
 app.listen(process.env.PORT||3000,()=>{
     console.log(`app is listening on port ${process.env.PORT}`)
-    console.log(`Db_URl ${process.env.DB_Password}`)
+    // console.log(`Db_URl ${process.env.DB_Password}`)
 })
