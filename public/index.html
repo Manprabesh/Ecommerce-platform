@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet/register.css">
+
 </head>
+
 <body>
-    <form action="/login" method="post">
-        <div class="mb-3"  >
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  <div class="main">
+    <h1>Welcome to Sell & Buy</h1>
+    <div id="grid_container">
+      <div id="parent_box">
+        <div id="box_1">
+          <form action="/login" method="post">
+            <div class="email">
+
+
+              <input type="email" name="email" placeholder="Email">
+
+            </div>
+            <div class="name">
+
+              <input type="text" name="name" placeholder="name">
+            </div>
+            <div class="password">
+
+              <input type="password" name="password" placeholder="password">
+            </div>
+            <div class="checkbox">
+              <input type="checkbox">
+
+            </div>
+            <div class="button">
+              <button type="submit">Submit</button>
+            </div>
+
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Name</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" name="name">
+        <div id="box_2">
+
+
+
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name="password">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
 </body>
+
 </html>

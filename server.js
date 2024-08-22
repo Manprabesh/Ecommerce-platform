@@ -24,7 +24,7 @@ app.use('/login', require('./routes/register'))
 app.use('/logout', require('./routes/logout'))
 app.use('/form', require('./routes/form'))
 
-
+// console.log(app.use(express.static(path.join(__dirname, 'public'))))
 app.use(express.static(path.join(__dirname, 'public')))
 
 // app.get('/form', (req, res) => {
