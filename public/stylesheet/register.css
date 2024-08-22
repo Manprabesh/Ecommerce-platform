@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+
+}
+
+body{
+    background-color: #1E201E;
+
+    color: #1E201E;
+
+}
+#grid_container{
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+}
+
+#parent_box{
+    /* display: flex; */
+    margin-left:50px;
+    margin-right:50px;
+    margin-top: 40px;
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 100%;
+}
+
+#box_1{
+    background-color: #3C3D37;
+    /* margin-top:50px; */
+    /* margin-left: 15%; */
+    /* margin-right: 15%; */
+    /* padding: 10%; */
+     /* box-shadow:  9px 9px 70px 10px black; */
+     /* border: 2px solid red; */
+     border-radius: 40px;
+     grid-row-start: 1;
+     grid-row-end: 1;
+     grid-column-start: 1;
+     grid-column-end: 2;
+}
+
+#box_1 form{
+    margin: 20%;
+    font-size: 30px;
+}
+
+#box_2{
+    background-color: tomato;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+
+.main{
+    /* background-color: black; */
+    height: 100vh;
+    width: 100%;
+    font-size: 30px;
+
+
+}
+
+.email{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.email input{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+}
