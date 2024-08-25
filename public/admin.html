@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin panel</h1>
+    <form action="/product" method="post">
+        <input type="text" placeholder="Enter Product name" name="product_name">
+        <textarea placeholder="Product description" name="product_description"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+<script>
+    // fetch('http://localhost:3000/product')
+    // .then((response)=>{
+    //     response.json()
+    // }).then(data=>{
+    //     console.log(data,"oihodihodhoi")
+    // }).catch(err=>{
+    //     // console.log(err.message)
+    // })
+
+    // fetch('http://localhost:3000/product')
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             console.log(data, "Fetched Products");
+    //             // You can display fetched products if needed
+    //         })
+    //         .catch((err) => {
+    //             console.error('Error fetching products:', err);
+    //         });
+
+
+
+
+//     console.time('fetchTime');
+// fetch('http://localhost:3000/product')
+//     .then((response) => response.json())
+//     .then((data) => {
+//         console.timeEnd('fetchTime'); // Logs the time taken
+//         console.log(data, "Fetched Products");
+//         data.forEach(element => {
+//             console.log(element.product_name)
+//             console.log(element.product_description)
+//         });
+//         // You can display fetched products if needed
+//     })
+//     .catch((err) => {
+//         console.error('Error fetching products:', err);
+//     });
+
+// async function uploadProduct(product_name, product_description) {
+//     try {
+//         const response = await fetch('http://localhost:3000/product', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify({ product_name, product_description }),
+//         });
+
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.error('Error uploading product:', error);
+//     }
+// }
+
+
+
+// Example usage of the function:
+// uploadProduct('Sample Product Name', 'Sample Product Description');
+
+</script>
+</html>

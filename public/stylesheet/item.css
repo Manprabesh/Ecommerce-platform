@@ -47,5 +47,5 @@ body{
 
 .text{
     display: flex;
-    justify-content: sp;
+    justify-content: space-between;
 }
